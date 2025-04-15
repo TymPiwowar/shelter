@@ -1,0 +1,55 @@
+.sliderContainer {
+	height: 100%;
+	position: relative;
+}
+
+.slideImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.7s ease-in-out;
+}
+
+.slideImage.active {
+	opacity: 1;
+}
+
+.imageSliderWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 36px;
+	color: #fff;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.leftArrow {
+	left: 16px;
+}
+
+.rightArrow {
+	right: 16px;
+}
+
+.dotsContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.dot {
+	margin: 0 8px;
+	cursor: pointer;
+	font-size: 16px;
+}

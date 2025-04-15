@@ -1,4 +1,19 @@
 .container {
+	height: 100%;
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.imageSliderContainer {
+	width: 60%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.introductionContainer {
+	width: auto;
+	margin: 3rem;
 }

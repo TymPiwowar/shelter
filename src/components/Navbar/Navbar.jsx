@@ -7,13 +7,24 @@ export default function Navbar() {
 		<nav className='nav'>
 			<Link to='/' className='site-title'>
 				{' '}
-				Site name
+				Schronisko w Bełchatowie
 			</Link>
 
 			<ul>
-				<CustomLink to='/home'>Strona główna</CustomLink>
+				<CustomLink className='link' to='/home'>
+					Strona główna
+				</CustomLink>
 
-				<CustomLink to='/auth'>logowanie</CustomLink>
+				<CustomLink className='link' to='/donate'>
+					Wpłać dotację
+				</CustomLink>
+				<CustomLink className='link' to='/adoption'>
+					Adoptuj
+				</CustomLink>
+
+				<CustomLink className='link' to='/auth'>
+					logowanie
+				</CustomLink>
 			</ul>
 		</nav>
 	)

@@ -7,7 +7,7 @@ body {
 }
 .nav {
 	width: 100%;
-	background-color: #62c1e5;
+	background-color: #006bd6;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -36,10 +36,35 @@ body {
 	padding: 0.25rem;
 }
 
-.nav li.active {
-	background-color: #777;
+.link,
+.link::after,
+.link::before {
+	transition: 0.3s;
 }
 
-.nav li:hover {
-	background-color: #555;
+.link {
+	position: relative;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.link::before,
+.link::after {
+	content: '';
+	position: absolute;
+	width: 0px;
+	bottom: 10px;
+	border-bottom: 2px solid #fff;
+}
+
+.link::before {
+	right: 50%;
+}
+.link::after {
+	left: 50%;
+}
+
+.link:hover::before,
+.link:hover::after {
+	width: 50%;
 }
