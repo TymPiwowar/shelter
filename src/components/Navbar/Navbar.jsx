@@ -5,16 +5,18 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 export default function Navbar() {
 	return (
 		<nav className='nav'>
-			<Link to='/' className='site-title'>
+			<Link to='/home' className='site-title'>
 				{' '}
 				Schronisko w Bełchatowie
 			</Link>
 
 			<ul>
-				<CustomLink className='link' to='/home'>
-					Strona główna
+				<CustomLink className='link' to='/adoption'>
+					Aktualności
 				</CustomLink>
-
+				<CustomLink className='link' to='/adoption'>
+					Zwierzęta
+				</CustomLink>
 				<CustomLink className='link' to='/donate'>
 					Wpłać dotację
 				</CustomLink>
@@ -23,7 +25,7 @@ export default function Navbar() {
 				</CustomLink>
 
 				<CustomLink className='link' to='/auth'>
-					logowanie
+					Logowanie
 				</CustomLink>
 			</ul>
 		</nav>

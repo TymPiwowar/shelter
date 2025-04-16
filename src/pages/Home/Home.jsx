@@ -1,6 +1,7 @@
 import './Home.css'
 import ImageSlider from '../../components/ImageSlider/ImageSlider'
 import Introduction from '../../components/Introduction/Introduction'
+import AnimalsPreview from '../../components/AnimalsPreview/AnimalsPreview'
 
 const Home = () => {
 	const slides = [
@@ -17,6 +18,9 @@ const Home = () => {
 			</div>
 			<div className='introductionContainer'>
 				<Introduction />
+			</div>
+			<div className='anmialsPreviewContainer'>
+				<AnimalsPreview />
 			</div>
 		</div>
 	)
