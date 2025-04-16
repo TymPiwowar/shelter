@@ -16,3 +16,21 @@
 	width: auto;
 	margin: 3rem;
 }
+
+.introductionContainer {
+	width: 100%;
+	background-color: #eaeaea;
+}
+.animalsPreviewContainer {
+	width: 100%;
+	/* background-color: #fff; */
+}
+
+.teamContainer {
+	width: 100%;
+	background-color: #eaeaea;
+}
+
+.resultsContainer {
+	width: 100%;
+}

@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './ImageSlider.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDog } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom'
 
 export default function ImageSlider({ slides }) {
 	const [currentIndex, setCurrentIndex] = useState(0)
+
+	const navigate = useNavigate()
 
 	const goToPrevious = () => {
 		const isFirstSlide = currentIndex === 0
@@ -47,6 +52,19 @@ export default function ImageSlider({ slides }) {
 						className={`slideImage ${index === currentIndex ? 'active' : ''}`}
 					/>
 				))}
+				<div className='mid-plane'></div>
+				<div className='textContainer'>
+					<h1 className='title'>Daj drugą szansę - adoptuj, pokochaj, odmień życie!</h1>
+					<p className='text'>
+						Schronisko w Bełchatowie, to miejsce, gdzie każdy zwierzak ma szansę na nowy, lepszy dom.
+					</p>
+					<button className='slide' onClick={() => navigate('/adoption')}>
+						<span className='span1'>
+							<FontAwesomeIcon icon={faDog} className='iconDog' />
+						</span>
+						<span className='span2'>Adoptuj!</span>
+					</button>
+				</div>
 			</div>
 
 			<div className='dotsContainer'>
