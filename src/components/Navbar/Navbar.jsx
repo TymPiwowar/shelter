@@ -23,6 +23,9 @@ export default function Navbar() {
 				<CustomLink className='link' to='/adoption'>
 					Adoptuj
 				</CustomLink>
+				<CustomLink className='link' to='/adoption'>
+					Odpowiedzialna Adopcja
+				</CustomLink>
 
 				<CustomLink className='link' to='/auth'>
 					Logowanie

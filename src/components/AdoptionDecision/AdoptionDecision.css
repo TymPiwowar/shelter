@@ -1,0 +1,71 @@
+.decisionContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	min-height: 300px;
+	margin-top: 10px;
+}
+
+.buttonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
+}
+.buttonsContainer .buttonsContainerbutton {
+	position: relative;
+	height: 120px;
+	width: 400px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid #fff;
+	color: #fff;
+	background: transparent;
+	border-radius: 12px;
+	overflow: hidden;
+	z-index: 0;
+	transition: background-color 0.2s;
+}
+
+.buttonsContainer button::before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	left: -140px;
+	width: 100px;
+	height: 160%;
+	background: linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.4) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	transform: rotate(25deg);
+	transition: all 0.5s;
+	z-index: 1;
+}
+
+.buttonsContainer button:hover::before {
+	left: 140%;
+}
+
+.adoptButton {
+	background-color: #006bd6;
+	border-color: #006bd6;
+	color: white;
+}
+
+.moreButton {
+	background-color: transparent;
+	color: black;
+	border-color: black;
+}
+
+.moreButton:hover {
+	background-color: #006bd6;
+	color: white;
+	border-color: white;
+}

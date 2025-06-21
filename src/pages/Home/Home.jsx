@@ -4,6 +4,8 @@ import Introduction from '../../components/Introduction/Introduction'
 import AnimalsPreview from '../../components/AnimalsPreview/AnimalsPreview'
 import Team from '../../components/TeamPreview/Team'
 import Results from '../../components/ShelterResults/Results'
+import AdoptionDecision from '../../components/AdoptionDecision/AdoptionDecision'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
 	const slides = [
@@ -30,6 +32,11 @@ const Home = () => {
 			<div className='resultsContainer'>
 				<Results />
 			</div>
+			<div className='adoptionContainer'>
+				<AdoptionDecision />
+			</div>
+
+			<Footer />
 		</div>
 	)
 }
