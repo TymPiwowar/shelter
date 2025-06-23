@@ -1,6 +1,9 @@
-.sliderContainer {
-	height: 100%;
+.sliderContainerWithArrows {
 	position: relative;
+	width: 60%;
+	height: 400px;
+	margin: 3rem auto;
+	align-self: center;
 }
 
 .slideImage {
@@ -47,6 +50,7 @@
 .dotsContainer {
 	display: flex;
 	justify-content: center;
+	padding: 4px;
 }
 
 .dot {

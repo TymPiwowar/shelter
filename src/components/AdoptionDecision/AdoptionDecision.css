@@ -1,5 +1,7 @@
 .decisionContainer {
 	display: flex;
+	width: 100%;
+	background-color: #eaeaea;
 	flex-direction: column;
 	text-align: center;
 	width: 100%;

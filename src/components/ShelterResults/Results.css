@@ -1,7 +1,9 @@
 .shlterResultsContainer {
 	display: flex;
 	padding: auto;
-	margin: 2rem;
+	width: 100%;
+
+	margin: 2rem auto;
 	text-align: center;
 	justify-content: center;
 	align-items: center;

@@ -35,7 +35,7 @@ export default function ImageSlider({ slides }) {
 	}, [currentIndex])
 
 	return (
-		<div className='sliderContainer'>
+		<div className='sliderContainerWithArrows'>
 			<div className='arrow leftArrow' onClick={goToPrevious}>
 				←
 			</div>

@@ -1,5 +1,6 @@
 .teamContainer {
-	/* display: flex; */
+	width: 100%;
+	background-color: #eaeaea;
 }
 
 .titleTeam {

@@ -2,42 +2,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-top: 10px;
 	min-height: 100vh;
-}
-
-.imageSliderContainer {
-	width: 60%;
-	height: 400px;
-	margin: 0 auto;
-}
-
-.introductionContainer {
-	width: auto;
-	margin: 3rem;
-}
-
-.introductionContainer {
-	width: 100%;
-	background-color: #eaeaea;
-}
-.animalsPreviewContainer {
-	width: 100%;
-	/* background-color: #fff; */
-}
-
-.teamContainer {
-	width: 100%;
-	background-color: #eaeaea;
-}
-
-.resultsContainer {
-	width: 100%;
-	background-color: #fff;
-}
-
-.adoptionContainer {
-	width: 100%;
-	background-color: #eaeaea;
+	padding-top: 20px;
 }

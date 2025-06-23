@@ -1,17 +1,18 @@
 import React from 'react'
 import './Navbar.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import logo from '../../assets/img/dog.png'
 
 export default function Navbar() {
 	return (
 		<nav className='nav'>
 			<Link to='/home' className='site-title'>
 				{' '}
-				Schronisko w Bełchatowie
+				<img src={logo} alt='Logo schroniska – siedzący pies' />
 			</Link>
 
 			<ul>
-				<CustomLink className='link' to='/adoption'>
+				<CustomLink className='link' to='/newsfeed'>
 					Aktualności
 				</CustomLink>
 				<CustomLink className='link' to='/adoption'>

@@ -1,11 +1,11 @@
 import './Home.css'
 import ImageSlider from '../../components/ImageSlider/ImageSlider'
 import Introduction from '../../components/Introduction/Introduction'
-import AnimalsPreview from '../../components/AnimalsPreview/AnimalsPreview'
 import Team from '../../components/TeamPreview/Team'
 import Results from '../../components/ShelterResults/Results'
 import AdoptionDecision from '../../components/AdoptionDecision/AdoptionDecision'
 import Footer from '../../components/Footer/Footer'
+import CardSlider from '../../components/CardSlider/CardSlider'
 
 const Home = () => {
 	const slides = [
@@ -24,7 +24,7 @@ const Home = () => {
 				<Introduction />
 			</div>
 			<div className='animalsPreviewContainer'>
-				<AnimalsPreview />
+				<CardSlider />
 			</div>
 			<div className='teamContainer'>
 				<Team />
