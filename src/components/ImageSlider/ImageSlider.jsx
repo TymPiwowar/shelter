@@ -62,7 +62,7 @@ export default function ImageSlider({ slides }) {
 						<span className='span1'>
 							<FontAwesomeIcon icon={faDog} className='iconDog' />
 						</span>
-						<span className='span2'>Adoptuj!</span>
+						<span className='span2'>Adoptuj</span>
 					</button>
 				</div>
 			</div>

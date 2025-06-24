@@ -1,6 +1,6 @@
 .teamContainer {
 	width: 100%;
-	background-color: #eaeaea;
+	background-color: #780000;
 }
 
 .titleTeam {
@@ -17,22 +17,25 @@
 	padding: 20px;
 }
 
+.teamImageContainer {
+	transition: transform 0.2s ease;
+}
+
 .teamImageContainer:hover {
-	scale: 1.02;
-	transition: scale 0.2s;
+	transform: scale(1.02);
 }
 
 .teamImage {
 	width: 600px;
 	max-width: 100%;
-	box-shadow: 0 0 4px #006bd6;
+	box-shadow: 0 0 4px #fdf0d5;
 	border-radius: 10px;
 }
 
 .textTeam {
 	font-size: 20px;
 	max-width: 500px;
-	color: #333;
+	color: #fdf0d5;
 	line-height: 1.6;
 	text-align: start;
 }

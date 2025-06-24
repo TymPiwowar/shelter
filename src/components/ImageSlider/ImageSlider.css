@@ -1,7 +1,7 @@
 .sliderContainerWithArrows {
 	position: relative;
-	width: 60%;
-	height: 400px;
+	width: 100%;
+	height: 500px;
 	margin: 3rem auto;
 	align-self: center;
 }
@@ -34,7 +34,7 @@
 	top: 50%;
 	transform: translate(0, -50%);
 	font-size: 36px;
-	color: #fff;
+	color: #fdf0d5;
 	z-index: 1;
 	cursor: pointer;
 }
@@ -81,7 +81,7 @@
 }
 
 .textContainer {
-	color: #fff;
+	color: #fdf0d5;
 	max-width: 800px;
 	width: 90%;
 	text-align: center;
@@ -96,12 +96,14 @@
 	font-size: 24px;
 	text-align: center;
 	line-height: 1.5;
+	font-weight: bold;
 }
 
 .title {
 	font-size: 38px;
-	color: #fff;
+	color: #fdf0d5;
 	text-align: center;
+	font-weight: bold;
 }
 
 button {
@@ -109,9 +111,9 @@ button {
 	margin: 20px;
 	padding: 30px 50px;
 	background: none;
-	border: 1px solid #fff;
+	border: 1px solid #fdf0d5;
 	border-radius: 8px;
-	color: #fff;
+	color: #fdf0d5;
 	font-size: 28px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -131,8 +133,8 @@ button::after {
 .slide {
 	width: 180px;
 	height: 95px;
-	background-color: #006bd6;
-	box-shadow: 0 0 2px #fff;
+	background-color: #780000;
+	box-shadow: 0 0 2px #fdf0d5;
 	border-radius: 25px;
 }
 
@@ -140,14 +142,14 @@ button::after {
 	height: 100%;
 	top: 0;
 	left: -10px;
-	border-left: 2px solid #fff;
+	border-left: 2px solid #fdf0d5;
 	z-index: 2;
 }
 .slide::before {
 	width: 100%;
 	top: -10px;
 	left: 0;
-	border-top: 3px solid #fff;
+	border-top: 3px solid #fdf0d5;
 	transition-delay: 0.1s;
 	z-index: 2;
 }
@@ -164,6 +166,8 @@ button::after {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .span1 {
@@ -186,7 +190,7 @@ button::after {
 
 .iconDog {
 	font-size: 40px;
-	color: white;
+	color: #fdf0d5;
 	z-index: 10;
 	display: inline-block;
 }

@@ -7,8 +7,10 @@
 	margin-top: auto;
 	font-size: 12px;
 	padding: 14px 0;
-	background-color: #006bd6;
-	color: #fff;
+	background-color: #fdf0d5;
+	color: #780000;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 .categoriesContainer {

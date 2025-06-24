@@ -16,9 +16,9 @@
 	width: 92vw;
 	height: 300px;
 	border-radius: 10px;
-	background-color: #006bd6;
+	background-color: #fdf0d5;
 
-	box-shadow: 0 0 12px #006bd6;
+	box-shadow: 0 0 12px #fdf0d5;
 }
 
 .resultBox {
@@ -32,20 +32,22 @@
 	align-items: center;
 	font-weight: bold;
 	border-radius: 25px;
-	background-color: #fff;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fdf0d5;
+	box-shadow: 0 2px 16px #c1121f;
+	font-weight: bold;
 }
 
 h2 {
 	font-size: 1.75rem;
 	margin: 0;
 	line-height: 1.2;
+	color: #c1121f;
 }
 
 .resultBox p {
 	margin: 0;
 	font-size: 1rem;
-	color: #006bd6;
+	color: #c1121f;
 }
 
 .iconBox .icon {

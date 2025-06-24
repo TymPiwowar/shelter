@@ -11,12 +11,15 @@ body {
 	left: 0;
 	z-index: 999;
 	width: 100%;
-	background-color: white;
-	color: #006bd6;
+	background-color: #fdf0d5;
+	color: #c1121f;
 	display: flex;
 	justify-content: space-between;
 	gap: 2rem;
 	padding: 0 1rem;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-weight: bold;
 }
 
 .site-title img {
@@ -66,7 +69,7 @@ body {
 	position: absolute;
 	width: 0px;
 	bottom: 10px;
-	border-bottom: 2px solid #006bd6;
+	border-bottom: 2px solid #c1121f;
 }
 
 .link::before {

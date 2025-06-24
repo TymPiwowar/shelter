@@ -9,7 +9,7 @@ export default function Team() {
 				<div className='teamImageContainer'>
 					<img
 						className='teamImage'
-						src='https://cdn.pixabay.com/photo/2015/08/11/23/13/employees-885338_1280.jpg'
+						src='https://cdn.pixabay.com/photo/2019/02/09/15/14/bali-3985336_1280.jpg'
 						alt='zespół schroniska'
 					/>
 				</div>
