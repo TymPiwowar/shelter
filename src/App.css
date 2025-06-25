@@ -4,6 +4,7 @@ body,
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -11,4 +12,13 @@ body {
 }
 .container {
 	min-height: 100vh;
+}
+
+:root {
+	--primary: #ebebeb;
+	--secondary: #ebebeb;
+	--cream: #32cd32;
+	--darkblue: #b5c0c2;
+	--text-light: #ebebeb;
+	--greytext: #6d6875;
 }

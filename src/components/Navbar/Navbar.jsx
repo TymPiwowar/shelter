@@ -2,10 +2,15 @@ import React from 'react'
 import './Navbar.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import logo from '../../assets/img/dog.png'
+import { motion } from 'framer-motion'
 
 export default function Navbar() {
 	return (
-		<nav className='nav'>
+		<motion.nav
+			initial={{ opacity: 0, y: -50 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 1.5, ease: 'easeIn' }}
+			className='nav'>
 			<Link to='/home' className='site-title'>
 				{' '}
 				<img src={logo} alt='Logo schroniska – siedzący pies' />
@@ -34,7 +39,7 @@ export default function Navbar() {
 					Logowanie
 				</CustomLink>
 			</ul>
-		</nav>
+		</motion.nav>
 	)
 }
 

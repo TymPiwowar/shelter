@@ -6,13 +6,17 @@ import Results from '../../components/ShelterResults/Results'
 import AdoptionDecision from '../../components/AdoptionDecision/AdoptionDecision'
 import Footer from '../../components/Footer/Footer'
 import CardSlider from '../../components/CardSlider/CardSlider'
+import dog1 from '../../assets/img/dog-7268179_1920.jpg'
+import dog2 from '../../assets/img/great_dane_dog_1920.jpg'
+import dog3 from '../../assets/img/iceland-dog-1977418_1920.jpg'
+import dog4 from '../../assets/img/puppy-742628_1920.jpg'
 
 const Home = () => {
 	const slides = [
-		{ url: 'https://cdn.pixabay.com/photo/2017/05/15/13/54/bully-dog-2314909_1280.jpg', title: 'dog1' },
-		{ url: 'https://cdn.pixabay.com/photo/2019/04/26/18/23/dog-4158220_1280.jpg', title: 'dog2' },
-		{ url: 'https://cdn.pixabay.com/photo/2017/05/31/18/16/hot-dog-2361133_1280.jpg', title: 'dog3' },
-		{ url: 'https://cdn.pixabay.com/photo/2020/05/24/17/29/dog-5215263_1280.jpg', title: 'dog4' },
+		{ url: dog1, title: 'dog1' },
+		{ url: dog2, title: 'dog2' },
+		{ url: dog3, title: 'dog3' },
+		{ url: dog4, title: 'dog4' },
 	]
 
 	return (

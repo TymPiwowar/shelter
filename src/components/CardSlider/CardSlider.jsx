@@ -3,28 +3,34 @@ import './CardSlider.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
+import dog1 from '../../assets/img/dog-3389729_640.jpg'
+import dog2 from '../../assets/img/pet-dog-2081782_640.jpg'
+import dog3 from '../../assets/img/dog-2886056_640.jpg'
+import dog4 from '../../assets/img/dog-3003339_640.jpg'
+import { fadeIn } from '../../utils/variants'
+import { motion } from 'framer-motion'
 
 const data = [
 	{
-		image: 'https://cdn.pixabay.com/photo/2015/02/21/10/39/dog-644111_1280.jpg',
+		image: dog1,
 		title: 'Andrzej',
 		age: 12,
 		sex: 'samiec',
 	},
 	{
-		image: 'https://cdn.pixabay.com/photo/2017/11/23/18/37/great-dane-2973438_1280.jpg',
+		image: dog2,
 		title: 'Balerina',
 		age: 13,
 		sex: 'samica',
 	},
 	{
-		image: 'https://cdn.pixabay.com/photo/2019/09/10/19/02/dog-4467064_1280.jpg',
+		image: dog3,
 		title: 'Reksio',
 		age: 2,
 		sex: 'samiec',
 	},
 	{
-		image: 'https://cdn.pixabay.com/photo/2020/05/20/09/28/cat-5195620_1280.jpg',
+		image: dog4,
 		title: 'Pulpet',
 		age: 5,
 		sex: 'samiec',
@@ -48,25 +54,37 @@ export default function CardSlider() {
 
 	return (
 		<>
-			<h1 className='h1Text'>POZNAJ NASZYCH PODOPIECZNYCH</h1>
+			<motion.h1
+				initial='hidden'
+				whileInView='show'
+				variants={fadeIn('up', 0)}
+				viewport={{ once: true, amount: 0.3 }}
+				className='h1Text'>
+				POZNAJ NASZYCH PODOPIECZNYCH
+			</motion.h1>
 
-			<div className='sliderContainer'>
+			<motion.div
+				variants={fadeIn('up', 0)}
+				initial='hidden'
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className='sliderContainer'>
 				<Slider {...settings} className='sliderInner'>
 					{data.map((item, idx) => (
 						<div key={idx} className='cardBox'>
 							<div className='cardImageContainer'>
 								<img src={item.image} alt={item.title} className='cardImage' />
-							</div>
-							<div className='cardTextContainer'>
-								<p className='nameText'>{item.title}</p>
-								<p className='detailsText'>
-									płeć: {item.sex}, wiek: {item.age}
-								</p>
+								<div className='cardTextContainer'>
+									<p className='nameText'>{item.title}</p>
+									<p className='detailsText'>
+										płeć: {item.sex}, wiek: {item.age}
+									</p>
+								</div>
 							</div>
 						</div>
 					))}
 				</Slider>
-			</div>
+			</motion.div>
 		</>
 	)
 }

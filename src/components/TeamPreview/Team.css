@@ -1,6 +1,6 @@
 .teamContainer {
 	width: 100%;
-	background-color: #780000;
+	background-color: var(--primary);
 }
 
 .titleTeam {
@@ -28,14 +28,14 @@
 .teamImage {
 	width: 600px;
 	max-width: 100%;
-	box-shadow: 0 0 4px #fdf0d5;
+	box-shadow: 0 0 4px var(--cream);
 	border-radius: 10px;
 }
 
 .textTeam {
 	font-size: 20px;
 	max-width: 500px;
-	color: #fdf0d5;
+	color: var(--cream);
 	line-height: 1.6;
 	text-align: start;
 }

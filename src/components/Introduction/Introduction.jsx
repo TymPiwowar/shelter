@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Introduction.css'
 import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
+import { fadeIn } from '../../utils/variants'
 
 export default function Introduction() {
 	const [visibleCards, setVisibleCards] = useState([])
@@ -42,8 +42,12 @@ export default function Introduction() {
 	}, [])
 
 	return (
-		<motion.div className='introductionContainer'>
-			<h1>Zanim adoptujesz</h1>
+		<motion.div
+			initial='hidden'
+			whileInView='show'
+			viewport={{ once: true, amount: 0.2 }}
+			className='introductionContainer'>
+			<motion.h1 variants={fadeIn('up', 0)}>ZANIM ADOPTUJESZ</motion.h1>
 			<div className='informationContainer'>
 				{cards.map((card, index) => (
 					<motion.div

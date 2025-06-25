@@ -16,9 +16,9 @@
 	width: 92vw;
 	height: 300px;
 	border-radius: 10px;
-	background-color: #fdf0d5;
+	background-color: var(--cream);
 
-	box-shadow: 0 0 12px #fdf0d5;
+	box-shadow: 0 0 12px var(--cream);
 }
 
 .resultBox {
@@ -32,8 +32,8 @@
 	align-items: center;
 	font-weight: bold;
 	border-radius: 25px;
-	background-color: #fdf0d5;
-	box-shadow: 0 2px 16px #c1121f;
+	background-color: var(--secondary);
+	box-shadow: 0 2px 8px var(--secondary);
 	font-weight: bold;
 }
 
@@ -41,13 +41,13 @@ h2 {
 	font-size: 1.75rem;
 	margin: 0;
 	line-height: 1.2;
-	color: #c1121f;
+	color: var(--cream);
 }
 
 .resultBox p {
 	margin: 0;
 	font-size: 1rem;
-	color: #c1121f;
+	color: var(--cream);
 }
 
 .iconBox .icon {

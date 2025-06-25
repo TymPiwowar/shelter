@@ -1,11 +1,25 @@
 import React from 'react'
 import './Team.css'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils/variants'
 
 export default function Team() {
 	return (
 		<div className='teamContainer'>
-			<h1 className='titleTeam'>Poznaj nasz zespół</h1>
-			<div className='contentTeamContainer'>
+			<motion.h1
+				initial='hidden'
+				whileInView='show'
+				variants={fadeIn('up', 0)}
+				viewport={{ once: true, amount: 0.3 }}
+				className='titleTeam'>
+				Poznaj nasz zespół
+			</motion.h1>
+			<motion.div
+				variants={fadeIn('up', 0)}
+				initial='hidden'
+				whileInView='show'
+				viewport={{ once: true, amount: 0.2 }}
+				className='contentTeamContainer'>
 				<div className='teamImageContainer'>
 					<img
 						className='teamImage'
@@ -23,7 +37,7 @@ export default function Team() {
 						jest liczba uratowanych zwierząt!
 					</p>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	)
 }
