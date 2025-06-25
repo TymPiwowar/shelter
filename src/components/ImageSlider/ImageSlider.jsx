@@ -36,13 +36,6 @@ export default function ImageSlider({ slides }) {
 
 	return (
 		<div className='sliderContainerWithArrows'>
-			<div className='arrow leftArrow' onClick={goToPrevious}>
-				←
-			</div>
-			<div className='arrow rightArrow' onClick={goToNext}>
-				→
-			</div>
-
 			<div className='imageSliderWrapper'>
 				{slides.map((slide, index) => (
 					<img
@@ -62,7 +55,7 @@ export default function ImageSlider({ slides }) {
 						<span className='span1'>
 							<FontAwesomeIcon icon={faDog} className='iconDog' />
 						</span>
-						<span className='span2'>Adoptuj</span>
+						<span className='span2'>Dotuj</span>
 					</button>
 				</div>
 			</div>

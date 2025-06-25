@@ -1,37 +1,51 @@
 .decisionContainer {
 	display: flex;
-	width: 100%;
-	background-color: #780000;
 	flex-direction: column;
-	text-align: center;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	min-height: 300px;
+	background-color: #780000;
+	text-align: center;
 	margin-top: 10px;
+	padding: 4rem 1rem 6rem;
+}
+
+.decisionContainer h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fdf0d5;
+	margin-bottom: 2rem;
 }
 
 .buttonsContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	text-align: center;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	width: 100%;
+	max-width: 900px;
 }
-.buttonsContainer .buttonsContainerbutton {
+
+/* Base button style */
+.buttonsContainer button {
 	position: relative;
-	height: 120px;
+	height: 140px;
 	width: 400px;
-	font-size: 1.5rem;
+	font-size: 32px;
+	font-weight: bold;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 2px solid #fdf0d5;
-	color: #fdf0d5;
-	background: transparent;
-	border-radius: 12px;
+	border-radius: 50%;
 	overflow: hidden;
+	transition: background-color 0.3s, border-radius 0.5s ease;
 	z-index: 0;
-	transition: background-color 0.2s, border-radius 2s ease;
 }
 
+/* Shine effect */
 .buttonsContainer button::before {
 	content: '';
 	position: absolute;
@@ -46,7 +60,7 @@
 		rgba(255, 255, 255, 0) 100%
 	);
 	transform: rotate(25deg);
-	transition: all 0.5s;
+	transition: all 0.5s ease;
 	z-index: 1;
 }
 
@@ -54,35 +68,20 @@
 	left: 140%;
 }
 
+/* Adopt button */
 .adoptButton {
 	background-color: #fdf0d5;
-	border-color: #fdf0d5;
 	color: #c1121f;
-	border-radius: 50%;
 }
 
+/* More info button */
 .moreButton {
 	background-color: #780000;
 	color: #fdf0d5;
-	border-color: #fdf0d5;
-	border-radius: 50%;
 }
 
-.adoptButton,
-.moreButton {
-	transition: border-radius 1s ease;
-	font-weight: bold;
-}
-
+/* Hover radius transition */
+.adoptButton:hover,
 .moreButton:hover {
 	border-radius: 25px;
-}
-
-.adoptButton:hover {
-	border-radius: 25px;
-}
-
-.decisionContainer h1 {
-	text-transform: uppercase;
-	font-weight: bold;
 }

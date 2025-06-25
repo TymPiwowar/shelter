@@ -1,7 +1,10 @@
 import React from 'react'
 import './AdoptionDecision.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function AdoptionDecision() {
+	const navigate = useNavigate()
+
 	return (
 		<div className='decisionContainer'>
 			<h1>Jesteś gotowy do adopcji?</h1>
