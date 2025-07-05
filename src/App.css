@@ -14,11 +14,17 @@ body {
 	min-height: 100vh;
 }
 
+h1,
+h2 {
+	color: var(--darkgreen);
+}
+
 :root {
-	--primary: #ebebeb;
-	--secondary: #ebebeb;
-	--cream: #32cd32;
-	--darkblue: #b5c0c2;
+	--primary: #fcfbf4;
+	--secondary: #d7e4cb;
+	--extra: #54962b;
+	--black: #121212;
 	--text-light: #ebebeb;
-	--greytext: #6d6875;
+	--greytext: #5b5b5b;
+	--darkgreen: #254e37;
 }

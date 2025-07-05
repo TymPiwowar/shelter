@@ -9,14 +9,31 @@ export default function AdoptionDecision() {
 
 	return (
 		<div className='decisionContainer'>
-			<motion.h1 initial='hidden' whileInView='show' variants={fadeIn('up', 0)} viewport={{ once: true, amount: 0.3 }}>
-				Jesteś gotowy do adopcji?
-			</motion.h1>
+			<div className='decisionCard'>
+				<motion.h1
+					initial='hidden'
+					whileInView='show'
+					variants={fadeIn('up', 0)}
+					viewport={{ once: true, amount: 0.3 }}>
+					Jeszcze się zastanawiasz?
+				</motion.h1>
+				<motion.p initial='hidden' whileInView='show' variants={fadeIn('up', 0)} viewport={{ once: true, amount: 0.3 }}>
+					Podejmij decyzję odpowiedzialnie
+				</motion.p>
+			</div>
+
 			<motion.div
-				variants={fadeIn('up', 0)}
 				initial='hidden'
 				whileInView='show'
-				viewport={{ once: true, amount: 0.6 }}
+				variants={fadeIn('left', 0.7)}
+				viewport={{ once: true, amount: 0.3 }}
+				className='adoptionImageSide'></motion.div>
+
+			<motion.div
+				variants={fadeIn('up', 0.6)}
+				initial='hidden'
+				whileInView='show'
+				viewport={{ once: true, amount: 0.7 }}
 				className='buttonsContainer'>
 				<button className='adoptButton' onClick={() => navigate('/adoption')}>
 					Adoptuj

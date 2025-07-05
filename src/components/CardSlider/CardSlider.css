@@ -10,7 +10,7 @@
 .sliderContainer {
 	width: 90vw;
 	margin: 0 auto 3rem;
-	background-color: var(--cream);
+	background-color: var(--primary);
 	padding: 20px;
 	box-sizing: border-box;
 	border-radius: 12px;
@@ -51,7 +51,7 @@
 	padding: 2px 8px;
 	box-sizing: border-box;
 	border-radius: 12px;
-	color: var(--cream);
+	color: var(--darkgreen);
 }
 
 .nameText {

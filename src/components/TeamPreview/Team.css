@@ -28,14 +28,14 @@
 .teamImage {
 	width: 600px;
 	max-width: 100%;
-	box-shadow: 0 0 4px var(--cream);
+	box-shadow: 0 0 4px var(--extra);
 	border-radius: 10px;
 }
 
 .textTeam {
 	font-size: 20px;
 	max-width: 500px;
-	color: var(--cream);
+	color: var(--darkgreen);
 	line-height: 1.6;
 	text-align: start;
 }
