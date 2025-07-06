@@ -20,13 +20,10 @@ export default function Navbar() {
 				<CustomLink className='link' to='/newsfeed'>
 					Aktualności
 				</CustomLink>
-				<CustomLink className='link' to='/adoption'>
+				<CustomLink className='link' to='/animals'>
 					Zwierzęta
 				</CustomLink>
 
-				<CustomLink className='link' to='/adoption'>
-					Adoptuj
-				</CustomLink>
 				<CustomLink className='link' to='/adoption'>
 					Odpowiedzialna Adopcja
 				</CustomLink>

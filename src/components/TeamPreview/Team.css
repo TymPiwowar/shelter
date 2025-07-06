@@ -28,7 +28,7 @@
 .teamImage {
 	width: 600px;
 	max-width: 100%;
-	box-shadow: 0 0 4px var(--extra);
+	box-shadow: 0 0 6px var(--darkgreen);
 	border-radius: 10px;
 }
 
