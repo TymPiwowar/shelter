@@ -67,7 +67,7 @@ export default function CardSlider() {
 				variants={fadeIn('up', 0)}
 				initial='hidden'
 				whileInView='show'
-				viewport={{ once: true, amount: 0.5 }}
+				viewport={{ once: true, amount: 0.4 }}
 				className='sliderContainer'>
 				<Slider {...settings} className='sliderInner'>
 					{data.map((item, idx) => (

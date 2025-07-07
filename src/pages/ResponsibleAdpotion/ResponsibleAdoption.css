@@ -46,6 +46,7 @@
 	animation-fill-mode: both;
 	animation-iteration-count: 1;
 	animation-delay: 1s;
+	transition: all 0.5s;
 }
 
 .letter:nth-child(1) {
@@ -122,6 +123,11 @@
 	100% {
 		top: 0;
 	}
+}
+
+.letter:hover {
+	transform: translateY(-20px);
+	color: var(--secondary);
 }
 
 .step1Container {

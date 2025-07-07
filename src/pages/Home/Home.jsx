@@ -4,7 +4,6 @@ import Introduction from '../../components/Introduction/Introduction'
 import Team from '../../components/TeamPreview/Team'
 import Results from '../../components/ShelterResults/Results'
 import AdoptionDecision from '../../components/AdoptionDecision/AdoptionDecision'
-import Footer from '../../components/Footer/Footer'
 import CardSlider from '../../components/CardSlider/CardSlider'
 import dog1 from '../../assets/img/dog-7268179_1920.jpg'
 import dog2 from '../../assets/img/great_dane_dog_1920.jpg'
@@ -39,8 +38,6 @@ const Home = () => {
 			<div className='adoptionContainer'>
 				<AdoptionDecision />
 			</div>
-
-			<Footer />
 		</div>
 	)
 }

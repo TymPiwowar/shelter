@@ -3,7 +3,7 @@ import './ResponsibleAdoption.css'
 
 export default function ResponsibleAdoption() {
 	const titleWords = ['ODPOWIEDZIALNA', 'ADOPCJA']
-
+	
 	return (
 		<>
 			<div className='section ResponsibleAdoptionSectionContainer'>

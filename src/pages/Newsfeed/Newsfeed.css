@@ -1,4 +1,17 @@
 .NewsfeedContainer {
-	height: 200px;
+	text-align: center;
+	padding: 2rem;
+}
+
+.newsGrid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.newsCard {
 	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	background-color: red;
 }

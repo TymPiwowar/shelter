@@ -53,7 +53,6 @@
 	backface-visibility: hidden;
 }
 
-
 .animalCardBack {
 	display: flex;
 	justify-content: space-evenly;
@@ -87,4 +86,41 @@
 	color: var(--secondary);
 	border: 1px solid var(--primary);
 	cursor: pointer;
+}
+
+.pagesButtonsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	padding: 3rem;
+}
+
+.pagesButtonsContainer button {
+	height: 40px;
+	padding: 10px;
+	border-radius: 8px;
+	background-color: var(--extra);
+	border: 1px solid var(--darkgreen);
+	color: var(--primary);
+	transition: all 0.2s;
+}
+
+.circleButton {
+	width: 40px;
+}
+
+.extremeButton {
+	height: 40px;
+}
+
+.pagesButtonsContainer button:hover {
+	background-color: var(--primary);
+	color: var(--extra);
+	cursor: pointer;
+}
+
+.pagesButtonsContainer button.active {
+	background-color: var(--primary);
+	color: var(--extra);
 }

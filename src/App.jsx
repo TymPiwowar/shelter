@@ -9,6 +9,7 @@ import Newsfeed from './pages/Newsfeed/Newsfeed'
 import Donate from './pages/Donate/Donate'
 import Animals from './pages/Animals/Animals'
 import AnimalPage from './components/AnimalPage/AnimalPage'
+import Footer from './components/Footer/Footer'
 // Initialize Supabase client
 const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY)
 
@@ -27,6 +28,7 @@ const App = () => {
 					<Route path='/Animals/animal/:id' element={<AnimalPage />} />
 					<Route path='/auth' element={<AuthPage supabaseClient={supabase} />} />
 				</Routes>
+				<Footer />
 			</div>
 		</>
 	)
