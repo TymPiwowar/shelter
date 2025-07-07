@@ -24,7 +24,7 @@ export default function Navbar() {
 					Zwierzęta
 				</CustomLink>
 
-				<CustomLink className='link' to='/adoption'>
+				<CustomLink className='link' to='/ResponsibleAdpotion'>
 					Odpowiedzialna Adopcja
 				</CustomLink>
 

@@ -53,13 +53,10 @@
 	backface-visibility: hidden;
 }
 
-.animalCardFront {
-	/* background-color: red; */
-}
 
 .animalCardBack {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 	background-color: var(--secondary);
@@ -89,4 +86,5 @@
 	background-color: var(--darkgreen);
 	color: var(--secondary);
 	border: 1px solid var(--primary);
+	cursor: pointer;
 }

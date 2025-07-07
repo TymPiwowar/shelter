@@ -35,10 +35,10 @@ export default function AdoptionDecision() {
 				whileInView='show'
 				viewport={{ once: true, amount: 0.7 }}
 				className='buttonsContainer'>
-				<button className='adoptButton' onClick={() => navigate('/adoption')}>
+				<button className='adoptButton' onClick={() => navigate('/animals')}>
 					Adoptuj
 				</button>
-				<button className='moreButton' onClick={() => navigate('/adoption')}>
+				<button className='moreButton' onClick={() => navigate('/ResponsibleAdpotion')}>
 					Dowiedz się więcej
 				</button>
 			</motion.div>

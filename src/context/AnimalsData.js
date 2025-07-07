@@ -1,0 +1,122 @@
+import puppy1 from '../assets/img/puppy1.jpg'
+import puppy2 from '../assets/img/puppy2.jpg'
+import puppy3 from '../assets/img/puppy3.jpg'
+import puppy4 from '../assets/img/puppy4.jpg'
+import puppy5 from '../assets/img/puppy5.jpg'
+import puppy6 from '../assets/img/puppy6.jpg'
+import puppy7 from '../assets/img/puppy7.jpg'
+import puppy8 from '../assets/img/puppy8.jpg'
+import puppy9 from '../assets/img/dog-3003339_640.jpg'
+
+const animals = [
+	{
+		name: 'Werona',
+		id: '1503/24',
+		breed: 'Owczarek niemiecki',
+		age: '12 lat',
+		weight: '26 kg',
+		location: 'ul. Szeligowska, Warszawa',
+		foundWhen: '2024-03-15',
+		foundWhere: 'okolice Pałacu Kultury i Nauki w Warszawie',
+		image: puppy1,
+		history: `Werona to dostojna seniorka, która przez całe życie wiernie służyła człowiekowi. Teraz szuka spokojnego domu, w którym będzie mogła odpocząć u boku kogoś, kto da jej miłość i bezpieczeństwo. Uwielbia spokojne spacery i delikatne głaskanie za uszkiem. Choć wiek już swoje zrobił, Werona wciąż potrafi cieszyć się chwilą i odwdzięczyć za opiekę spojrzeniem pełnym wdzięczności. Idealna dla spokojnych, ciepłych ludzi, którzy szukają wiernej towarzyszki na jesień życia.`,
+	},
+	{
+		name: 'Zulusia',
+		id: '1105/22',
+		breed: 'Europejska',
+		age: '4 lata',
+		weight: '3 kg',
+		location: 'ul. Przemyska, Warszawa',
+		foundWhen: '2022-05-11',
+		foundWhere: 'ul. Jagodowa w Warszawie',
+		image: puppy2,
+		history: `Zulusia to filigranowa dama o wielkim sercu i ciekawskiej duszy. Jest bardzo kontaktowa i chętnie wskakuje na kolana, żeby przytulić się do człowieka. Lubi być w centrum uwagi, ale nie narzuca się – wystarczy delikatne “chodź” i już jest obok. Dobrze odnajduje się w domu z dziećmi, a także z innymi kotami. Zdecydowanie typ kanapowca, który równie chętnie pobawi się wędką, jak i zwinie się w kłębek pod kocem.`,
+	},
+	{
+		name: 'Luma',
+		id: '1203/23',
+		breed: 'Mieszaniec',
+		age: '2 lata',
+		weight: '8 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2023-03-12',
+		foundWhere: 'ul. Wieprzowa w Warszawie',
+		image: puppy3,
+		history: `Luma to młoda, energiczna suczka, która kocha wszystko, co się rusza – piłeczki, patyki i ludzi! Ma niespożyte pokłady energii, ale też ogromne serce, które oddaje w całości swojemu opiekunowi. Uwielbia bieganie, spacery i wszelkie zabawy z człowiekiem. Idealnie odnajdzie się w aktywnej rodzinie, szczególnie tam, gdzie są dzieci lub inne psy do zabawy. Szybko się uczy i chętnie współpracuje – to pies gotowy do wspólnej przygody!`,
+	},
+	{
+		name: 'Andrzej',
+		id: '1503/20',
+		breed: 'Mieszaniec',
+		age: '3 lata',
+		weight: '4 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2020-03-15',
+		foundWhere: 'ul. Zagubionych Psów w Warszawie',
+		image: puppy4,
+		history: `Andrzej to pies o złamanym sercu, który powoli odzyskuje zaufanie do ludzi. Potrzebuje czasu i cierpliwości, ale gdy już poczuje się bezpiecznie, otwiera się jak książka. Kocha delikatne głaskanie, spokojne spacery i wieczory spędzane obok człowieka. Nie przepada za hałasem ani tłumem, więc najlepiej odnajdzie się w cichym domu, wśród ludzi z dużym sercem. To pies, który nie prosi o wiele – tylko o szansę.`,
+	},
+	{
+		name: 'Stefan',
+		id: '2512/12',
+		breed: 'Mieszaniec',
+		age: '10 lat',
+		weight: '12 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2012-12-25',
+		foundWhere: 'ul. Kolorowa w Warszawie',
+		image: puppy5,
+		history: `Stefan to prawdziwy dżentelmen w psim wydaniu. Mimo wieku wciąż lubi spacery i cieszy się każdą chwilą u boku człowieka. Jest spokojny, zrównoważony i niezwykle czuły. Lubi towarzystwo ludzi i innych spokojnych zwierząt. Idealny kompan na leniwe popołudnia i wspólne poranne kawy na balkonie. Stefan nie potrzebuje już przygód – potrzebuje miłości, ciepła i kawałka podłogi, na którym będzie mógł spokojnie zasnąć.`,
+	},
+	{
+		name: 'Krowa',
+		id: '0301/19',
+		breed: 'Mieszaniec',
+		age: '13 lat',
+		weight: '19 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2019-01-03',
+		foundWhere: 'ul. Skarbowa w Warszawie',
+		image: puppy6,
+		history: `Choć jej imię może wywołać uśmiech, Krowa to pies z ogromną klasą. Ma spokojny charakter i niesamowite poczucie lojalności. Uwielbia kontakt z ludźmi – od dzieci po seniorów. Potrafi godzinami leżeć przy nodze i po prostu być. Jest cierpliwa, łagodna i świetnie radzi sobie w domowych warunkach. To pies idealny dla kogoś, kto chce prawdziwego, spokojnego towarzysza do codzienności.`,
+	},
+	{
+		name: 'Prosiaczek',
+		id: '0511/15',
+		breed: 'Mieszaniec',
+		age: '5 lat',
+		weight: '13 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2015-11-05',
+		foundWhere: 'ul. Listopadowa w Warszawie',
+		image: puppy7,
+		history: `Prosiaczek to istny wulkan emocji – radosny, wierny, ale też odważny i czujny. Szybko przywiązuje się do ludzi i bardzo ich pilnuje, dlatego będzie świetnym psem stróżującym. Najlepiej odnajdzie się jako jedynak w domu, gdzie będzie mógł być w centrum uwagi. Jest bardzo oddany, wrażliwy na ton głosu i gesty. Potrzebuje osoby zdecydowanej, ale ciepłej – wtedy staje się psem na całe życie.`,
+	},
+	{
+		name: 'Jarek',
+		id: '1208/22',
+		breed: 'Mieszaniec',
+		age: '4 lata',
+		weight: '5 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2022-08-12',
+		foundWhere: 'ul. Pomarańczowa w Warszawie',
+		image: puppy8,
+		history: `Jarek to młody łobuziak, który wszędzie go pełno. Biega, skacze, bawi się – i nigdy się nie nudzi! Jest bardzo kontaktowy, szybko zaprzyjaźnia się z ludźmi i innymi psami. Uwielbia spacery i wszelkie aktywności. To pies dla osoby, która prowadzi aktywny tryb życia i chce mieć przy sobie psa-partnera. Jarek ma ogromny potencjał i wiele miłości do oddania – wystarczy mu dać szansę.`,
+	},
+	{
+		name: 'Zbyś',
+		id: '0107/25',
+		breed: 'Mieszaniec',
+		age: '11 miesięcy',
+		weight: '10 kg',
+		location: 'ul. Wolumen, Warszawa',
+		foundWhen: '2025-07-01',
+		foundWhere: 'ul. Znaleźna w Warszawie',
+		image: puppy9,
+		history: `Zbyś to jeszcze dzieciak – wszystkiego się uczy, wszystko chce zobaczyć i wszystkiego dotknąć nosem. Jest bardzo bystry i szybko łapie, czego się od niego oczekuje. Uwielbia zabawy, ludzi i jedzenie – jak każdy zdrowy szczeniak. Potrzebuje domu, w którym będzie mógł dorastać z troską i cierpliwością. W zamian odda całe swoje serce i stanie się wiernym przyjacielem na długie lata.`,
+	},
+]
+
+export default animals
