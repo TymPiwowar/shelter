@@ -47,6 +47,7 @@
 	animation-iteration-count: 1;
 	animation-delay: 1s;
 	transition: all 0.5s;
+	cursor: default;
 }
 
 .letter:nth-child(1) {
