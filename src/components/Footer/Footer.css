@@ -1,10 +1,8 @@
 .footerContainer {
 	width: 100%;
-	height: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: auto;
 	font-size: 12px;
 	padding: 14px 0;
 	background-color: var(--extra);
@@ -21,6 +19,7 @@
 	margin: 0 auto;
 	padding: 0 2rem;
 	gap: 8rem;
+	flex-wrap: wrap;
 }
 
 .categoriesContainer h3 {

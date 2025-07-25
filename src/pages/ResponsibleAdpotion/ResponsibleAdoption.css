@@ -8,8 +8,10 @@
 	background-color: var(--darkgreen);
 }
 
+.sectionContainer {
+	background-color: var(--darkgreen);
+}
 .section {
-	height: 100vh;
 	opacity: 1;
 	transform: translateY(50px);
 	transition: opacity 0.6s, transform 0.6s;
@@ -131,9 +133,229 @@
 	color: var(--secondary);
 }
 
-.step1Container {
-	height: 100vh;
+.stepsSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 4rem;
+	flex-wrap: wrap;
+}
+
+.stepContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* height: 100vh; */
+	width: 100%;
+	border-radius: 50px;
+	background-color: var(--secondary);
+	padding: 3rem;
+	margin-bottom: 3rem;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.titleContainer {
+	flex: 1;
+}
+
+.step4 .titleContainer h3 {
+	text-align: center;
+	color: var(--darkgreen);
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.titleContainer h2 {
+	font-size: 4rem;
+	font-family: 'Gasoek One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.sideTextContainer {
+	flex: 3;
+	text-align: end;
+}
+
+.sideTextContainer p {
+	font-size: 1.8rem;
+	font-family: 'Caveat', cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--darkgreen);
+	text-align: left;
+}
+
+.step1 {
+	flex-direction: column;
+}
+
+.step1 p {
+	margin-left: 16rem;
+}
+
+.step2 {
+	flex-direction: row-reverse;
+}
+
+.step4 h2 {
+	text-align: center;
+}
+
+.step3 .stepImageContainer {
+	transform: rotateZ(0deg);
+	transition: transform 0.4s ease-out;
+}
+.step3 .stepImageContainer:hover {
+	transform: rotateZ(-5deg);
+}
+
+.contentContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.wholeTextContainer {
+	flex: 1;
+}
+
+.stepImageContainer {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	min-height: 400px;
+}
+
+.stepImageContainer img.stepImage {
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.step2 .stepImageContainer img.stepImage {
 	width: 80%;
-	border-radius: 70px;
+	height: 450px;
+}
+
+.step3 .stepImageContainer img.stepImage {
+	width: 70%;
+	height: 500px;
+}
+
+.step4 .stepImageContainer {
+	flex: 2;
+	padding: 2rem;
+}
+.step4 .stepImageContainer img.stepImage {
+	width: 100%;
+	height: 260px;
+}
+
+.step4 .sideTextContainer p {
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 24px;
+}
+
+.step5 .sideTextContainer {
+	flex: 1;
+}
+.step5 .titleContainer {
+	flex: 1;
+}
+
+.knowTheDogButton {
+	background-color: var(--secondary);
+	color: var(--darkgreen);
+	height: 50px;
+	width: 80%;
+	border-radius: 14px;
+	text-transform: uppercase;
+	padding: 0.4rem;
+	font-size: 1.4rem;
+	transition: all 0.6s;
+	border: 1px solid var(--darkgreen);
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.knowTheDogButton:hover {
+	background-color: var(--darkgreen);
+	color: var(--secondary);
+	border: 1px solid var(--primary);
+	cursor: pointer;
+}
+
+.afterSteps {
+	display: flex;
+	background-color: var(--darkgreen);
+	color: var(--primary);
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 4rem 2rem;
+	margin-bottom: 8rem;
+
+	height: auto !important;
+}
+
+.afterSteps h2 {
+	color: var(--primary);
+	padding: 0 6rem 0 6rem;
+}
+
+.afterSteps .titleContainer {
+	text-align: center;
+}
+
+.afterStepsText {
+	flex: 2;
+	text-align: left;
+	font-family: 'Caveat', cursive;
+	font-size: 1.8rem;
+}
+
+.afterStepsContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 2rem 4rem;
+	gap: 2rem;
+}
+
+.donateButton {
+	background-color: var(--darkgreen);
+	color: var(--primary);
+	height: 50px;
+	width: 30%;
+	border-radius: 14px;
+	text-transform: uppercase;
+	padding: 0.4rem;
+	font-size: 1.4rem;
+	transition: all 0.6s;
+	border: 1px solid var(--primary);
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.donateButton:hover {
 	background-color: var(--primary);
+	color: var(--darkgreen);
+	border: 1px solid var(--primary);
+	cursor: pointer;
 }

@@ -1,0 +1,45 @@
+.dontationContainer {
+}
+
+.donationImageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to top, rgba(255, 248, 220, 0.9), transparent);
+	z-index: 1;
+}
+
+.textOnImageContainer {
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+}
+
+.textOnImageContainer {
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	width: 100%;
+	color: var(--darkgreen);
+	padding: 0 20px;
+}
+
+.gradientBackground {
+	height: 800px;
+	background: linear-gradient(to bottom, rgba(255, 248, 220, 0.9));
+	margin-top: -50px;
+	z-index: 1;
+	position: relative;
+}

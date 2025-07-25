@@ -17,6 +17,7 @@ export default function Newsfeed() {
 		<>
 			<div className='NewsfeedContainer'>
 				<h1>Aktualności</h1>
+				<p>Co ostatnio u nas słychać</p>
 				<div className='newsGrid'>
 					{paginatedNews.map(news => (
 						<div key={news.id} className='newsCard'>

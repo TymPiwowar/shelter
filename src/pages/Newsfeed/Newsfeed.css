@@ -8,7 +8,11 @@
 	gap: 2.5rem;
 	grid-template-columns: 1fr 1fr;
 }
-.NewsfeedContainer h1 {
+
+.NewsfeedContainer p {
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	margin-bottom: 3rem;
 }
 

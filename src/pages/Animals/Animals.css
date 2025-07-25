@@ -58,18 +58,18 @@
 	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
-	background-color: var(--secondary);
+	background-color: var(--darkgreen);
 	color: var(--extra);
 	transform: rotateY(180deg);
 }
 
 .animalCardBack h2 {
-	color: var(--darkgreen);
+	color: var(--primary);
 }
 
 .knowMoreAboutAnimalButton {
-	background-color: var(--primary);
-	color: var(--darkgreen);
+	background-color: var(--darkgreen);
+	color: var(--primary);
 	height: 12%;
 	width: 50%;
 	border-radius: 14px;
@@ -78,12 +78,12 @@
 	font-size: 16px;
 	transition: all 0.6s;
 	justify-self: center;
-	border: 1px solid var(--darkgreen);
+	border: 1px solid var(--primary);
 }
 
 .knowMoreAboutAnimalButton:hover {
-	background-color: var(--darkgreen);
-	color: var(--secondary);
+	background-color: var(--primary);
+	color: var(--darkgreen);
 	border: 1px solid var(--primary);
 	cursor: pointer;
 }

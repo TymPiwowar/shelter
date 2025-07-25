@@ -17,7 +17,7 @@ const App = () => {
 	return (
 		<>
 			<Navbar />
-			<div className='container'>
+			{/* <div className='container'> */}
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/Home' element={<Home />} />
@@ -29,7 +29,7 @@ const App = () => {
 					<Route path='/auth' element={<AuthPage supabaseClient={supabase} />} />
 				</Routes>
 				<Footer />
-			</div>
+			{/* </div> */}
 		</>
 	)
 }

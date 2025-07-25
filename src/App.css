@@ -22,7 +22,8 @@ h2 {
 :root {
 	--primary: #fcfbf4;
 	--secondary: #d7e4cb;
-	--extra: #54962b;
+	/* --extra: #54962b; */
+	--extra: #254e37;
 	--black: #121212;
 	--text-light: #ebebeb;
 	--greytext: #5b5b5b;
