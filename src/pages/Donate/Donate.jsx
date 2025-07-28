@@ -2,7 +2,9 @@ import React from 'react'
 import dogImage from '../../assets/img/donationDog.jpg'
 import './Donate.css'
 import BasicButton from '../../components/BasicButton/BasicButton'
-
+import { GiDogBowl } from 'react-icons/gi'
+import { TbVaccine } from 'react-icons/tb'
+import { FaUserDoctor } from 'react-icons/fa6'
 export default function Donate() {
 	return (
 		<div className='dontationContainer'>
@@ -25,14 +27,17 @@ export default function Donate() {
 				<div className='optionsContainer'>
 					<div className='optionToDonateContainer'>
 						<h1>50zł</h1>
+						<GiDogBowl className='iconsStyle' />
 						<p>Pełny brzuch na 3 dni</p>
 					</div>
 					<div className='optionToDonateContainer'>
 						<h1>20zł</h1>
+						<TbVaccine className='iconsStyle' />
 						<p>Jedno szczepienie</p>
 					</div>
 					<div className='optionToDonateContainer'>
 						<h1>100zł</h1>
+						<FaUserDoctor className='iconsStyle' />
 						<p>Opieka weterynaryjna przez tydzień</p>
 					</div>
 				</div>

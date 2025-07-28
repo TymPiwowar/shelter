@@ -3,6 +3,9 @@ import './Results.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../utils/variants'
+import { MdOutlinePets } from 'react-icons/md'
+import { FaHeart } from 'react-icons/fa'
+import { FaHome } from 'react-icons/fa'
 
 export default function Results() {
 	return (
@@ -24,7 +27,7 @@ export default function Results() {
 					<div className='resultBox'>
 						{' '}
 						<div className='iconBox'>
-							<p className='icon'>🐾</p>
+							<MdOutlinePets className='icon' />
 						</div>
 						<h2>572</h2>
 						<p>Zwierząt do adopcji</p>
@@ -32,14 +35,14 @@ export default function Results() {
 					<div className='resultBox'>
 						{' '}
 						<div className='iconBox'>
-							<p className='icon'>❤️</p>
+							<FaHeart className='icon' />
 						</div>
 						<h2>377</h2>
 						<p>Adopcji w tym roku</p>
 					</div>
 					<div className='resultBox'>
 						<div className='iconBox'>
-							<p className='icon'>🏠</p>
+							<FaHome className='icon' />
 						</div>
 						<h2>145</h2>
 						<p>Zwierząt wróciło do domów</p>

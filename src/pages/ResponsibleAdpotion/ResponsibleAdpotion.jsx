@@ -4,6 +4,8 @@ import step1Dog from '../../assets/img/step1Dog.png'
 import step3DogWithGirl from '../../assets/img/step3DogWithGirl.jpg'
 import step4Dog from '../../assets/img/dogStep4Alternative.png'
 import { useNavigate } from 'react-router-dom'
+import { PiDogBold } from 'react-icons/pi'
+import { FaRegHeart } from 'react-icons/fa'
 
 export default function ResponsibleAdoption() {
 	const titleWords = ['ODPOWIEDZIALNA', 'ADOPCJA']
@@ -87,8 +89,12 @@ export default function ResponsibleAdoption() {
 					</div>
 					<div className='contentContainer'>
 						<div className='sideTextContainer'>
-							<p>🦴 rozmowę z opiekunem lub wolontariuszem schroniska,</p>
-							<p>🦴 ankietę przedadopcyjną, pozwalającą ocenić Twoje przygotowanie,</p>
+							<p>
+								<PiDogBold /> rozmowę z opiekunem lub wolontariuszem schroniska,
+							</p>
+							<p>
+								<PiDogBold /> ankietę przedadopcyjną, pozwalającą ocenić Twoje przygotowanie,
+							</p>
 						</div>
 						<div className='stepImageContainer'>
 							<img
@@ -98,8 +104,12 @@ export default function ResponsibleAdoption() {
 							/>
 						</div>
 						<div className='sideTextContainer'>
-							<p>🦴 wizytę przedadopcyjną w Twoim domu</p>
-							<p>🦴 podpisanie umowy adopcyjnej, w której zobowiązujesz się do odpowiedzialnej opieki</p>
+							<p>
+								<PiDogBold /> wizytę przedadopcyjną w Twoim domu
+							</p>
+							<p>
+								<PiDogBold /> podpisanie umowy adopcyjnej, w której zobowiązujesz się do odpowiedzialnej opieki
+							</p>
 						</div>
 					</div>
 				</div>
@@ -126,7 +136,7 @@ export default function ResponsibleAdoption() {
 						<div className='afterStepsText'>
 							<p>
 								Nie możesz teraz adoptować? Każda pomoc się liczy – Twoja darowizna pomoże nam ratować kolejne zwierzaki
-								💚
+								<FaRegHeart style={{ color: 'var(--primary)', marginLeft: '16px', marginTop: '4px' }} />
 							</p>
 						</div>
 						<button className='donateButton' onClick={() => navigate(`/donate`)}>

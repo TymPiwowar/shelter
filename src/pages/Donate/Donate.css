@@ -91,3 +91,8 @@
 .optionToDonateContainer {
 	width: 30%;
 }
+
+.iconsStyle {
+	font-size: 72px;
+	color: var(--darkgreen);
+}

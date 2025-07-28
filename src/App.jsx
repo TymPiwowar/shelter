@@ -10,6 +10,7 @@ import Donate from './pages/Donate/Donate'
 import Animals from './pages/Animals/Animals'
 import AnimalPage from './components/AnimalPage/AnimalPage'
 import Footer from './components/Footer/Footer'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 // Initialize Supabase client
 const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY)
 
@@ -18,17 +19,18 @@ const App = () => {
 		<>
 			<Navbar />
 			{/* <div className='container'> */}
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/Home' element={<Home />} />
-					<Route path='/ResponsibleAdpotion' element={<ResponsibleAdpotion />} />
-					<Route path='/Newsfeed' element={<Newsfeed />} />
-					<Route path='/Donate' element={<Donate />} />
-					<Route path='/Animals' element={<Animals />} />
-					<Route path='/Animals/animal/:id' element={<AnimalPage />} />
-					<Route path='/auth' element={<AuthPage supabaseClient={supabase} />} />
-				</Routes>
-				<Footer />
+			<ScrollToTop />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/Home' element={<Home />} />
+				<Route path='/ResponsibleAdpotion' element={<ResponsibleAdpotion />} />
+				<Route path='/Newsfeed' element={<Newsfeed />} />
+				<Route path='/Donate' element={<Donate />} />
+				<Route path='/Animals' element={<Animals />} />
+				<Route path='/Animals/animal/:id' element={<AnimalPage />} />
+				<Route path='/auth' element={<AuthPage supabaseClient={supabase} />} />
+			</Routes>
+			<Footer />
 			{/* </div> */}
 		</>
 	)

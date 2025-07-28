@@ -3,6 +3,7 @@ import './Navbar.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import logo from '../../assets/img/dog.png'
 import { motion } from 'framer-motion'
+import { SiDatadog } from 'react-icons/si'
 
 export default function Navbar() {
 	return (
@@ -12,8 +13,7 @@ export default function Navbar() {
 			transition={{ duration: 1.5, ease: 'easeIn' }}
 			className='nav'>
 			<Link to='/home' className='site-title'>
-				{' '}
-				<img src={logo} alt='Logo schroniska – siedzący pies' />
+				<SiDatadog style={{ fontSize: '64px', padding: '0.3rem' }} />
 			</Link>
 
 			<ul>
