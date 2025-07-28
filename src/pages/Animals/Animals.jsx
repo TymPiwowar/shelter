@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Animals.css'
 import animals from '../../context/AnimalsData'
-
+import BasicButton from '../../components/BasicButton/BasicButton'
 import { useNavigate } from 'react-router-dom'
 
 export default function Animals() {
@@ -34,11 +34,10 @@ export default function Animals() {
 							</div>
 							<div className='animalCardBack'>
 								<h2>{animal.name}</h2>
-								<button
-									className='knowMoreAboutAnimalButton'
-									onClick={() => navigate(`/animals/animal/${encodeURIComponent(animal.id)}`)}>
-									Dowiedz się więcej
-								</button>
+								<BasicButton
+									buttonText='Dowiedz się więcej'
+									onClick={() => navigate(`/animals/animal/${encodeURIComponent(animal.id)}`)}
+								/>
 							</div>
 						</div>
 					</div>

@@ -1,0 +1,20 @@
+.basicButton {
+	background-color: var(--darkgreen);
+	color: var(--primary);
+	height: 12%;
+	width: 50%;
+	border-radius: 14px;
+	text-transform: uppercase;
+	padding: 0.4rem;
+	font-size: 16px;
+	transition: all 0.6s;
+	justify-self: center;
+	border: 1px solid var(--primary);
+}
+
+.basicButton:hover {
+	background-color: var(--primary);
+	color: var(--darkgreen);
+	border: 1px solid var(--primary);
+	cursor: pointer;
+}
